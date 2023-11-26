@@ -24,7 +24,7 @@ public abstract class Vaccine {
         return apptLocation;
     }
     public String getVaccineName(){
-        return vaccineName;
+        return this.vaccineName;
     }
 
     public int getNumOfDoses(){

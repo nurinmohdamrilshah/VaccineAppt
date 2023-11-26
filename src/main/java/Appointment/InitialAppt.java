@@ -8,7 +8,6 @@ public class InitialAppt extends Appointment {
         super(date,location);
     }
     public String getApptInfo() {
-        System.out.println("The initial appointment was on "+date+" at "+location+".");
-        return null;
+        return "The initial appointment was on "+date+" at "+location+"."+"<br>";
     }
 }

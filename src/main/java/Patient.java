@@ -22,7 +22,7 @@ public class Patient {
     public String displayAppointments() {
         String display = new String("<html>");
         display+="Patient: "+patientName+"<br>";
-        display+=initialAppointment.getApptInfo();
+        display+=initialAppointment.getApptInfo()+"<br>";
         for (Vaccine v:vaccines){
             List<Appointment> appts = v.getAppointments();
             for (Appointment a:appts){

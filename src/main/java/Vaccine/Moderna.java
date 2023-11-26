@@ -10,14 +10,14 @@ import java.util.List;
 
 public class Moderna extends Vaccine {
     public Moderna(){
-        super("Vaccine.Moderna","Epping",3,4, LocalDate.now().plusDays(5));
+        super("Moderna","Epping",3,4, LocalDate.now().plusDays(5));
     }
 
     public List<Appointment> getAppointments(){
         ArrayList<Appointment> appts = new ArrayList<Appointment>();
         String giver;
 
-        for (int i=1; i<numOfDoses; i++){
+        for (int i=1; i<numOfDoses+1; i++){
             if (i==1) giver = "nurse";
             else giver = "doctor";
 

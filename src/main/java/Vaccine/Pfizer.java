@@ -10,13 +10,13 @@ import java.util.List;
 
 public class Pfizer extends Vaccine {
     public Pfizer(){
-        super("Vaccine.Pfizer","Southall",2, 6,LocalDate.now().plusDays(5));
+        super("Pfizer","Southall",2, 6,LocalDate.now().plusDays(5));
     }
     public List<Appointment> getAppointments(){
         ArrayList<Appointment> appts = new ArrayList<Appointment>();
         String giver;
 
-        for (int i=1; i<numOfDoses; i++){
+        for (int i=1; i<numOfDoses+1; i++){
             if (i==1) giver = "doctor";
             else giver = "nurse";
 
